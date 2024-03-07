@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mikey Nikets' Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
-
-    <button id="startButton">Start</button>
+<body> 
+    <div class="container"> 
+        <img src="{{ url_for('static', filename='assistant.png') }}" alt="Assistant Image" class="assistant-image">
+        <button id="startButton">Start</button> 
+    </div>
     <p id="message"></p> 
     <script src="script.js"></script>
 </body>
